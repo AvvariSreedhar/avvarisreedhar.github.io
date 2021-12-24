@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    background-color: #16161a;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    padding: 0px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+li.nav_link a{
+    text-decoration: none;
+    color: #a6a8b8;
+    transition: color 0.2s;
+}
+
+li.nav_link a:hover{
+    color: #fff;
+}
+
+.header_logo{
+    border: 1px solid #fff;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+header nav .header_links ul, section.main ul{
+    display: flex;
+    padding: 0px;
+}
+
+header nav .header_links ul li, section.main ul li {
+    list-style-type: none;
+}
+
+/* Responsive nav bar */
+
+@media only screen and (max-width: 630px) {
+    header nav {
+        display: flex;
+        flex-direction: column;
+    }
+    header nav .header_logo {
+        margin-bottom: 20px;
+    }
+}
+
+section.main {
+    display: flex;
+    min-height: 70vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.main img{
+    border-radius: 50%;
+    width:150px;
+    height:150px;
+    border: 10px solid #26272e93;
+    object-fit: cover;
+    cursor: pointer;
+    margin: 20px auto 15px;
+}
+
+section.main span {
+    color: #fffffe;
+    font-size: 27px;
+    font-weight: 800;
+}
+
+section.main p{
+    font-size: 14px;
+    color: #a6a8b8;
+    margin: 5px auto;
+}
+
+section.main ul li a{
+    text-decoration: none;
+    color: #a6a8b8;
+    text-decoration: none;
+    font-size: 25px;
+    margin: 20px 10px;
+    transition: color 0.2s;
+}
+
+section.main ul li a:hover{
+    color:#fff;
+}
